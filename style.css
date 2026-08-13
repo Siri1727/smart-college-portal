@@ -1,0 +1,520 @@
+/* ===== GENERAL RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-body{
+    height:100vh;
+    background:#e9edf2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-wrapper{
+    width:1100px;
+    height:550px;
+    background:#fff;
+    display:flex;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* IMAGE SECTION */
+.login-image{
+    width:60%;
+    background:url('images/college.jpg') center/cover no-repeat;
+    position:relative;
+}
+
+.login-image .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.5);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.login-image h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.login-image p{
+    font-size:18px;
+}
+
+/* LOGIN FORM */
+.login-form{
+    width:40%;
+    padding:70px 50px;
+}
+
+.login-form h2{
+    margin-bottom:30px;
+    color:#003366;
+    text-align:center;
+}
+
+.login-form input,
+.login-form select{
+    width:100%;
+    padding:14px;
+    margin-bottom:22px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.login-form button{
+    width:100%;
+    padding:14px;
+    background:#003366;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-form button:hover{
+    background:#0055aa;
+}
+
+/* ===== DASHBOARD ===== */
+.topbar{
+    background:#003366;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.profile{
+    position:relative;
+    cursor:pointer;
+}
+
+.profile img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:2px solid white;
+}
+
+.dropdown{
+    display:none;
+    position:absolute;
+    right:0;
+    background:white;
+    width:160px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    border-radius:6px;
+    overflow:hidden;
+    z-index:100;
+}
+
+.dropdown a{
+    display:block;
+    padding:12px;
+    color:#003366;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.dropdown a:hover{
+    background:#f0f0f0;
+}
+
+/* SHOW CLASS FOR DROPDOWN */
+.show{
+    display:block;
+}
+
+/* DASHBOARD CARDS */
+.dashboard{
+    padding:40px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    cursor:pointer;
+    transition:0.3s;
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#003366;
+}
+
+.card p{
+    color:#555;
+    font-size:14px;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    background:#e3f2fd;
+}
+/* ===== FINAL LOGIN PAGE STYLE ===== */
+
+.login-page{
+    background:#8faef5;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-card{
+    width:1150px;
+    height:580px;
+    background:#ffffff;
+    border-radius:18px;
+    display:flex;
+    overflow:hidden;
+    box-shadow:0 20px 45px rgba(0,0,0,0.25);
+}
+
+/* LEFT SECTION */
+.login-left{
+    width:60%;
+    background:#eef3ff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px 30px;
+    text-align:center;
+}
+
+.login-left h1{
+    font-size:36px;
+    color:#1a3dc1;
+    margin-bottom:20px;
+}
+
+.login-left img{
+    width:75%;
+    margin:20px 0;
+}
+
+.tagline{
+    font-size:16px;
+    color:#444;
+    font-weight:500;
+    margin-top:20px;
+}
+
+/* RIGHT SECTION */
+.login-right{
+    width:40%;
+    padding:70px 60px;
+}
+
+.login-right h2{
+    font-size:32px;
+    color:#1a3dc1;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#666;
+    margin-bottom:35px;
+}
+
+.login-right input,
+.login-right select{
+    width:100%;
+    padding:14px;
+    margin-bottom:22px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.login-right button{
+    width:100%;
+    padding:14px;
+    background:#1a3dc1;
+    color:#ffffff;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.login-right button:hover{
+    background:#162f9c;
+}
+/* ===== LOGIN PAGE TOP TITLE ===== */
+
+.login-page{
+    background:#25459d;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+/* TOP TEXT */
+.top-title{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.top-title h1{
+    font-size:46px;
+    color:#ffffff;
+    margin-bottom:10px;
+    font-weight: 700;
+}
+
+.top-title p{
+    font-size:16px;
+    color:#f2f4ff;
+    font-weight:600;
+}
+
+/* LOGIN CARD */
+.login-card{
+    width:1150px;
+    height:560px;
+    background:#ffffff;
+    border-radius:18px;
+    display:flex;
+    overflow:hidden;
+    box-shadow:0 20px 45px rgba(0,0,0,0.25);
+}
+
+/* LEFT IMAGE */
+.login-left{
+    width:60%;
+    background:#eef3ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-left img{
+    width:75%;
+}
+
+/* RIGHT FORM */
+.login-right{
+    width:40%;
+    padding:70px 60px;
+}
+
+.login-right h2{
+    font-size:32px;
+    color:#1a3dc1;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#666;
+    margin-bottom:35px;
+}
+
+
+.login-right input[type="text"],
+.login-right select{
+    width:100%;
+    padding:14px;
+    margin-bottom:22px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+}
+
+
+.login-right button{
+    width:100%;
+    padding:14px;
+    background:#1a3dc1;
+    color:#ffffff;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.login-right button:hover{
+    background:#162f9c;
+}
+.login-card{
+    transition: all 0.4s ease;
+}
+
+.login-right button{
+    transition: all 0.3s ease;
+}
+/* ===== DASHBOARD BACKGROUND ===== */
+body.dashboard-body {
+    background-image: url('images/dashboard_image.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Topbar styling */
+.topbar{
+    background: rgba(0, 51, 102, 0.85); /* semi-transparent dark */
+    color: white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position: sticky;
+    top:0;
+    z-index:100;
+}
+
+/* Profile dropdown */
+.profile{
+    position:relative;
+    cursor:pointer;
+}
+
+.profile img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:2px solid white;
+}
+
+.dropdown{
+    display:none;
+    position:absolute;
+    right:0;
+    background:white;
+    width:160px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    border-radius:6px;
+    overflow:hidden;
+    z-index:100;
+}
+
+.dropdown a{
+    display:block;
+    padding:12px;
+    color:#003366;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.dropdown a:hover{
+    background:#f0f0f0;
+}
+
+/* Show dropdown */
+.show{
+    display:block;
+}
+
+/* Dashboard cards */
+.dashboard{
+    padding:40px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+}
+
+/* Cards with semi-transparent background for readability */
+.card{
+    background: rgba(255,255,255,0.9);
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    cursor:pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#003366;
+}
+
+.card p{
+    color:#555;
+    font-size:14px;
+}
+
+/* Card hover effect */
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    background: rgba(255,255,255,0.95);
+}
+html, body {
+    height: 100%;
+}
+
+
+
+
+
+
+/* Notice Notification Bubble */
+
+.notice-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+.notice-bubble{
+
+    background:red;
+
+    color:white;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+

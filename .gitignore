@@ -1,0 +1,8 @@
+# Personal uploaded files
+uploads/
+
+# Email/SMTP credentials
+mail_config.php
+
+# Temporary testing file
+test_upload.php
