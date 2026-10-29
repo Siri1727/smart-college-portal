@@ -97,7 +97,7 @@ PHP sessions are used to maintain login sessions and restrict access to role-spe
 4. Ensure the project folder is available at:
 
    ```text
-   C:\xampp\htdocs\smart-college-portal
+   C:\xampp\htdocs\smart_college_portal
    ```
 
    If the cloned folder name differs from the folder name expected by the application, adjust the folder name or local URL accordingly.
