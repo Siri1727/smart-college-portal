@@ -1,369 +1,142 @@
 # 🎓 Smart College Portal
 
-A web-based college management system designed to simplify academic activities such as **attendance management, notice sharing, student achievement tracking, and certificate verification**.
+Smart College Portal is a web-based college management application developed to centralize important academic activities, including student attendance tracking, faculty notices, student achievement management, and certificate verification.
 
-The system provides separate role-based interfaces for **Students, Faculty, and Certificate Verifiers**, allowing each user to access features relevant to their responsibilities.
-
----
+The application provides role-based access for students, faculty members, and certificate verifiers, allowing each user to access the features relevant to their responsibilities.
 
 ## 📌 Project Overview
 
-Managing academic information using manual records or multiple disconnected platforms can make it difficult for students and faculty to access important information efficiently.
+Managing attendance, academic announcements, and student certificates through separate manual processes can be time-consuming. Smart College Portal brings these activities together in one web application, making academic information easier to manage and access.
 
-This project was developed as an **academic mini project by a team of four members**.
+This project was developed as a team academic mini-project.
 
-The **Smart College Portal** provides a centralized platform where:
-
-* Students can monitor their attendance and achievements.
-* Faculty can mark attendance and publish notices.
-* Certificate verifiers can review and verify certificates uploaded by students.
-
-The portal is developed using **PHP, MySQL, HTML, CSS, and JavaScript** and can be run locally using **XAMPP and phpMyAdmin**.
-
----
-
-## ✨ Features
+## ✨ Key Features
 
 ### 🎓 Student Module
-
-Students can:
-
-* 🔐 Login using their registration number and password
-* 👤 View and manage their profile
-* 📊 View subject-wise attendance
-* 📅 Filter attendance by date or date range
-* 📢 View notices relevant to their branch and year
-* 🔔 Receive an indication when new notices are available
-* 🏆 Add achievements
-* 📄 Upload certificates and awards
-* 📋 View previously uploaded achievements
-* ✅ Check the verification status of submitted certificates
-
----
+- Log in using student credentials.
+- View and manage profile information.
+- Monitor subject-wise attendance and attendance percentages.
+- Filter attendance records by date range.
+- View notices relevant to the student's branch and year.
+- Add achievements and upload supporting certificates.
+- Track certificate verification status.
 
 ### 👨‍🏫 Faculty Module
-
-Faculty members can:
-
-* 🔐 Login using faculty credentials
-* 👤 Access their faculty profile
-* 📝 Mark student attendance
-* 📢 Post academic notices and announcements
-* 🎯 Send notices to relevant students
-* 📜 View previously posted notices
-* ✏️ Edit posted notices
-* 🗑️ Delete notices
-* 🚪 Securely logout from the system
-
----
+- Access the faculty dashboard and profile.
+- Mark and manage student attendance.
+- Publish academic notices for the relevant branch and year.
+- View previously published notices.
+- Edit or delete notices.
 
 ### ✅ Certificate Verifier Module
-
-Certificate verifiers can:
-
-* 🔐 Login through a dedicated verifier account
-* 📊 View the certificate verification dashboard
-* 📄 View certificates uploaded by students
-* ⏳ Monitor pending certificates
-* ✅ View verified certificates
-* 🔎 Filter certificates based on achievement type and date
-* 📥 Access uploaded certificate files
-* ✔️ Verify student certificates
-* 👤 Manage their profile
-
----
-
-## 🏆 Achievement Management
-
-Students can maintain a digital record of their achievements inside the portal.
-
-Supported achievement categories include:
-
-* Internship
-* Hackathon
-* Workshop
-* Certification
-* Seminar
-* Sports
-* Cultural
-* Placement
-* Other achievements
-
-Students can provide the achievement title, date, description, type, and supporting certificate.
-
-The submitted certificate can then be reviewed by an authorized **Certificate Verifier**.
-
----
+- Access a dedicated certificate verification dashboard.
+- Review certificates uploaded by students.
+- View pending and verified certificates.
+- Filter certificate records.
+- Verify submitted student certificates.
 
 ## 📊 Attendance Management
 
-The attendance module allows faculty members to record student attendance while students can monitor their attendance through their dashboard.
+The attendance module allows faculty members to record student attendance and enables students to monitor their attendance.
 
-Students can view:
+Students can view attendance details such as:
+- Subject name
+- Total periods conducted
+- Periods attended
+- Attendance percentage
 
-* Subject name
-* Total periods held
-* Total periods attended
-* Attendance percentage
+Attendance reports can be filtered by today, the current month, or a custom date range.
 
-Attendance reports can also be filtered using options such as:
+## 🏆 Student Achievement Management
 
-* Till Today
-* This Month
-* Custom Date Range
+Students can maintain digital records of achievements such as internships, hackathons, workshops, certifications, seminars, sports, cultural activities, and placements.
 
-This helps students continuously monitor their attendance instead of depending on manually maintained records.
-
----
+Students can submit achievement details and upload supporting certificates for review by an authorized certificate verifier.
 
 ## 📢 Notice Management
 
-Faculty members can publish academic notices through the portal.
-
-Notices can be delivered based on student information such as **branch and year**, helping ensure that announcements reach the appropriate students.
-
-Students can access notices from their dashboard, and the portal provides a notification indicator when unread notices are available.
-
-Faculty members can also manage their notice history by viewing, editing, or deleting previously published notices.
-
----
+Faculty members can publish academic announcements for specific student branches and years. Students can view relevant notices through the portal, while faculty members can manage their previously published notices.
 
 ## 🔐 Role-Based Access
 
-The portal supports three different user roles:
+The application supports three primary roles:
 
-| Role                   | Main Responsibilities                            |
-| ---------------------- | ------------------------------------------------ |
-| 🎓 Student             | View attendance, notices and manage achievements |
-| 👨‍🏫 Faculty          | Mark attendance and manage notices               |
-| ✅ Certificate Verifier | Review and verify student certificates           |
+| Role | Responsibilities |
+|---|---|
+| Student | View attendance and notices; manage achievements and certificates |
+| Faculty | Mark attendance and manage academic notices |
+| Certificate Verifier | Review and verify student certificates |
 
-PHP sessions are used to maintain user login information and restrict access to role-specific pages.
-
----
+PHP sessions are used to maintain login sessions and restrict access to role-specific pages.
 
 ## 🛠️ Technology Stack
 
-| Technology | Purpose                       |
-| ---------- | ----------------------------- |
-| HTML5      | Web page structure            |
-| CSS3       | Styling and user interface    |
-| JavaScript | Client-side interaction       |
-| PHP        | Server-side application logic |
-| MySQL      | Database management           |
-| XAMPP      | Local Apache and MySQL server |
-| phpMyAdmin | MySQL database administration |
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Backend:** PHP
+- **Database:** MySQL
+- **Local Development Environment:** XAMPP
+- **Database Administration:** phpMyAdmin
 
----
+## ⚙️ Run the Project Locally
 
-## 📁 Project Structure
+### Prerequisites
+- XAMPP
+- Git
+- A web browser
 
-```text
-smart_college_portal/
-│
-├── images/                         # Images and uploaded resources
-├── src/                            # Additional project resources
-│
-├── login.php                       # Main login page
-├── logout.php                      # Logout functionality
-│
-├── dashboard.php                   # Student dashboard
-├── profile.php                     # Student profile
-├── edit_profile.php                # Edit student profile
-│
-├── attendance.php                  # Student attendance report
-├── mark_attendance.php             # Faculty attendance page
-├── save_attendance.php             # Save attendance data
-│
-├── notice_board.php                # Student notice board
-├── post_notice.php                 # Faculty posts notices
-├── faculty_notice_history.php      # Faculty notice history
-├── edit_notice.php                 # Edit notices
-├── delete_notice.php               # Delete notices
-│
-├── add_achievement.php             # Upload student achievements
-├── view_achievements.php           # View student achievements
-│
-├── faculty_dashboard.php           # Faculty dashboard
-├── faculty_profile.php             # Faculty profile
-├── edit_faculty_profile.php        # Edit faculty profile
-│
-├── certificate_dashboard.php       # Certificate dashboard
-├── verifier_dashboard.php          # Certificate verifier dashboard
-├── verify_certificate.php          # Certificate verification
-├── verify_certificates.php         # View certificates for verification
-├── certificate_profile.php         # Verifier profile
-├── edit_certificate_profile.php    # Edit verifier profile
-├── certificate_logout.php          # Verifier logout
-│
-├── db_connect.php                  # Database connection
-├── send_mail.php                   # Email functionality
-├── style.css                       # Main stylesheet
-├── script.js                       # JavaScript functionality
-│
-└── .gitignore
-```
+### Setup Steps
 
----
+1. Start **Apache** and **MySQL** from the XAMPP Control Panel.
+2. Open the XAMPP `htdocs` directory.
+3. Clone this repository:
 
-## ⚙️ Installation and Setup
+   ```bash
+   git clone https://github.com/Siri1727/smart-college-portal.git
+   ```
 
-### 1. Install XAMPP
+4. Ensure the project folder is available at:
 
-Install XAMPP and start:
+   ```text
+   C:\xampp\htdocs\smart-college-portal
+   ```
 
-```text
-Apache
-MySQL
-```
+   If the cloned folder name differs from the folder name expected by the application, adjust the folder name or local URL accordingly.
 
----
+5. Create and configure the MySQL database named `college_portal` using phpMyAdmin. The required database tables must also be created or imported.
+6. Configure your local database credentials in the database connection file. **Do not commit passwords or other sensitive information to GitHub.**
+7. Open the application in your browser using the matching local folder name, for example:
 
-### 2. Clone the Repository
+   `http://localhost/smart-college-portal/login.php`
 
-Open a terminal inside the XAMPP `htdocs` directory and run:
+> **Note:** The database and institutional/student records are not included in this repository. You must configure the required database schema before running the application.
 
-```bash
-git clone https://github.com/pedagadimanojna/smart_college_portal.git
-```
+## 🎯 Project Objectives
 
-Or download the repository as a ZIP file and extract it into:
-
-```text
-C:\xampp\htdocs\
-```
-
-The resulting folder should look like:
-
-```text
-C:\xampp\htdocs\smart_college_portal
-```
-
----
-
-### 3. Configure the Database
-
-The application uses a MySQL database named `college_portal`.
-
-> **Note:** The database is not included in this repository because it contains private institutional and student data.
-
-The database should be configured locally using **MySQL/phpMyAdmin**.
-
-The default local database configuration used by the project is:
-
-```text
-Host     : localhost
-Username : root
-Password : [empty]
-Database : college_portal
-```
-
-If your MySQL configuration is different, update the database credentials in `db_connect.php` accordingly.
-
-A demo database containing sample data may be added in a future version.
-
----
-
-### 4. Run the Project
-
-Make sure **Apache** and **MySQL** are running in XAMPP.
-
-Then open:
-
-```text
-http://localhost/smart_college_portal/login.php
-```
-
-The Smart College Portal login page should appear.
-
----
-
-## 🔄 Basic Workflow
-
-```text
-                         SMART COLLEGE PORTAL
-                                  │
-                                Login
-                                  │
-              ┌───────────────────┼───────────────────┐
-              │                   │                   │
-           Student             Faculty        Certificate Verifier
-              │                   │                   │
-       ┌──────┼──────┐      ┌─────┼─────┐       Review Certificates
-       │      │      │      │           │                │
- Attendance Notices Achievement Attendance  Notices   Verify/Approve
-                     │
-              Upload Certificate
-                     │
-                     └──────────────────────────────►
-                         Certificate Verification
-```
-
----
-
-## 🎯 Objectives
-
-The main objectives of the Smart College Portal are:
-
-* Digitize important college academic activities
-* Reduce dependency on manual record keeping
-* Provide students with easy access to attendance information
-* Improve communication between faculty and students
-* Maintain student achievements digitally
-* Provide a structured certificate verification process
-* Provide role-based access to different users
-* Centralize important academic information in a single portal
-
----
+- Digitize essential college academic activities.
+- Reduce dependence on manual records.
+- Make attendance information easier for students to access.
+- Improve academic communication between faculty and students.
+- Maintain student achievement records digitally.
+- Provide a structured certificate verification workflow.
+- Centralize academic activities through role-based dashboards.
 
 ## 🚀 Future Enhancements
 
-The project can be extended with practical enhancements such as:
+- Improve the interface for mobile devices.
+- Strengthen authentication and database security.
+- Add attendance shortage alerts and reporting.
+- Enhance email notifications.
+- Introduce additional attendance analytics.
 
-* 📱 **Responsive Design** – Improve the portal for easy use on mobile phones and tablets.
-* 📧 **Email Notifications** – Notify students about important notices and certificate verification updates.
-* 📊 **Attendance Analytics** – Provide simple attendance statistics and alerts for students with low attendance.
-* 🔒 **Enhanced Security** – Improve authentication using password hashing and secure database queries.
+## 👥 Project Contribution
 
----
-
-## 💡 Advantages
-
-* Centralized academic information
-* Easy attendance monitoring
-* Faster communication through digital notices
-* Digital maintenance of student achievements
-* Dedicated certificate verification workflow
-* Separate dashboards based on user roles
-* Reduced paperwork
-* Easy access to academic information
-
----
-
-## 👥 Project Team
-
-The **Smart College Portal** was developed as an academic mini project by a team of four members.
-
-- **P. Manojna**
-- **P. Siri**
-- **Spurthi**
-- **M. Divya**
----
+This is a team-developed academic mini-project. The portal includes student, faculty, and certificate verification workflows. Individual contributions can be documented separately according to the work completed by each team member.
 
 ## 📌 Repository
 
-**Smart College Portal**
-
-[github.com/pedagadimanojna/smart_college_portal](https://github.com/pedagadimanojna/smart_college_portal)
-
----
+**GitHub:** https://github.com/Siri1727/smart-college-portal
 
 ## 📄 Project Status
 
-🚧 **Currently under development**
+**Under development.** Further improvements to the interface, attendance functionality, and other modules are planned.
 
-Additional modules, security improvements, and user-interface enhancements can be integrated in future versions.
-
----
-
-⭐ If you find this project useful, consider giving the repository a star.
